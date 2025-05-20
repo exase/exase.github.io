@@ -1,73 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class=""><!--<![endif]-->
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <title>Ex-ASE 2025</title>
-  <link rel="stylesheet" href="style.css">
+
+
+  <!-- Library - Bootstrap v3.3.5 -->
+  <link rel="stylesheet" type="text/css" href="libraries/lib.css">
+  <link rel="stylesheet" type="text/css" href="libraries/Stroke-Gap-Icon/stroke-gap-icon.css">
+  <!-- Library - Font Awesome v4.7.0 -->
+  <link rel="stylesheet" href="libraries/font-awesome.min.css">
+
+
+  <!-- Custom - Common CSS -->
+  <link rel="stylesheet" type="text/css" href="css/plugins.css">
+  <link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
+  <link rel="stylesheet" type="text/css" href="libraries/lightslider-master/lightslider.css">
+
+  <!-- Custom - Theme CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/shortcode.css">
+  <!--[if lt IE 9]>		
+		<script src="js/html5/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-  <header>
-    <h1>International Workshop on Explainable Automated Software Engineering</h1>
-    <h2>Exploring Theory, Adaptation, Needs, Challenges, and Ethics</h2>
-    <p class="subtitle">(Ex-ASE)</p>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+  <!-- Loader -->
+  <div id="site-loader" class="load-complete">
+    <div class="loader">
+      <div class="loader-inner ball-clip-rotate">
+        <div></div>
+      </div>
+    </div>
+  </div><!-- Loader /- -->
+
+  <!-- Header -->
+  <header class="header-main container-fluid no-padding">
+    <!-- Top Header -->
+    <div class="top-header container-fluid no-padding">
+      <div class="container">
+        <div class="row">
+          <!-- Social -->
+          <div class="col-md-4 col-sm-4 col-xs-6 social">
+            <ul>
+              <li><a title="Twitter" href="TODO" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a title="Mail" href="mailto:TODO"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+          </div>
+          <!-- Register Placeholder -->
+          <!--
+        <div class="col-md-4 col-sm-4 col-xs-6 register">
+          <a href="#" title="Register">Register</a>
+        </div>
+        -->
+          <!-- Logo -->
+          <div class="col-md-4 col-sm-4 col-xs-12 logo-block">
+            <a href="https://exase.github.io" title="Logo">
+              <h3>Ex-ASE 2025</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Block -->
+    <div class="menu-block container-fluid no-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar ow-navigation">
+              <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse"
+                  class="navbar-toggle collapsed" type="button">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav menubar">
+                  <li class="active"><a title="Home" href="index.html">Home</a></li>
+                  <li><a title="About" href="#about">About</a></li>
+                  <li><a title="Important Dates" href="#importantDates">Important Dates</a></li>
+                  <li><a title="Submission" href="#submission">Submission</a></li>
+                  <!-- <li><a title="Keynotes" href="#keynote">Keynotes</a></li> -->
+                  <!-- <li><a title="Program" href="#program">Program</a></li> -->
+                  <li><a title="Organization" href="#organization">Organization</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#cfp">Call for Papers</a></li>
-      <li><a href="#dates">Important Dates</a></li>
-      <li><a href="#organizers">Organizers</a></li>
-    </ul>
-  </nav>
+  <!-- Header /- -->
 
-  <main>
-    <section id="about">
-      <h3>About the Workshop</h3>
-      <p>
-        The Ex-ASE workshop aims to explore the intersection between explainability and automated software engineering.
-        It invites researchers and practitioners to reflect on the theoretical foundations, practical applications,
-        challenges, and ethical considerations involved in developing explainable approaches to software automation.
-      </p>
-    </section>
+  <!-- TITLE Section -->
+  <div class="container-fluid no-padding howwecan-section"
+    style="background-image: url(images/seoul.jpg); background-size: cover; background-position: center;">
+    <div class="section-padding"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <!-- Left side intentionally left empty -->
+        </div>
+        <div class="col-md-8 col-sm-6 col-xs-12 transp align-left">
+          <div class="howwecan-right">
+            <div class="section-header">
+              <p class="pre">1st International Workshop on Explainable Automated Software Engineering</p>
+              <p class="title">ExASE 2025</p>
+              <p class="subtitle">Exploring Theory, Adaptation, Needs, Challenges, and Ethics</p>
+              <p class="satellite">Co-located with the </p>
+              <p class="satellite" style="margin-bottom: 3em;">
+                <a href="https://conf.researchr.org/home/ase-2025" target="_blank">
+                  40th IEEE/ACM International Conference on Automated Software Engineering (ASE 2025)
+                </a>
+              </p>
+            </div>
 
-    <section id="cfp">
-      <h3>Call for Papers</h3>
-      <p>
-        We welcome submissions on topics including (but not limited to):
-      </p>
-      <ul>
-        <li>Explainability in automated code generation and testing</li>
-        <li>User-centric explanations in software tools</li>
-        <li>Ethics and fairness in software engineering automation</li>
-        <li>Case studies and empirical evaluations</li>
-        <li>Cross-disciplinary perspectives on explainability</li>
-      </ul>
-    </section>
+            <div class="section-subheader">
+              <div class="iconsInfo">
+                <i class="fa fa-calendar"></i>
+                <p class="infos">
+                  <strong>DATE</strong>
+                  <span>16-20 November</span>
+                </p>
+              </div>
+              <div class="iconsInfo">
+                <i class="fa fa-map-marker"></i>
+                <p class="infos">
+                  <strong>LOCATION</strong>
+                  <span>Seoul, South Korea</span>
+                </p>
+              </div>
+            </div>
 
-    <section id="dates">
-      <h3>Important Dates</h3>
-      <ul>
-        <li><strong>Submission Deadline:</strong> [Insert Date]</li>
-        <li><strong>Notification of Acceptance:</strong> [Insert Date]</li>
-        <li><strong>Camera-Ready Deadline:</strong> [Insert Date]</li>
-        <li><strong>Workshop Date:</strong> [Insert Date]</li>
-      </ul>
-    </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-padding"></div>
+  </div>
+  <!-- TITLE Section /- -->
 
-    <section id="organizers">
-      <h3>Organizing Committee</h3>
-      <ul>
-        <li>Your Name, Affiliation</li>
-        <li>Co-organizer Name, Affiliation</li>
-        <li>...more organizers...</li>
-      </ul>
-    </section>
-  </main>
+  <!-- About Section -->
+  <div id="about" class="container-fluid no-padding introduction-section">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 mb-100 text-center" style="padding: 3em;">
+        <p class="title-lead mt-20 text-left">
+          The Ex-ASE workshop aims to explore the intersection between explainability and automated software
+          engineering.
+          It invites researchers and practitioners to reflect on the theoretical foundations, practical applications,
+          challenges,
+          and ethical considerations involved in developing explainable approaches to software automation.</p>
+        <h4 class="text-left">We welcome contributions that address the following topics:</h4>
+        <div>
+          <ul class="text-left">
+            <li>TODO</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- About Section /- -->
 
-  <footer>
-    <p>&copy; 2025 Ex-ASE Workshop. All rights reserved.</p>
-  </footer>
+    <!-- Important Dates Section -->
+    <div id="importantDates" class="container-fluid no-padding introduction-section">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 mb-80 text-center">
+          <h1 class="title">Important Dates</h1>
+        </div>
+        <div class="col-sm-8 col-sm-offset-2 mb-100 text-center" style="border-bottom: 0;">
+          <div class="text-center dates">
+            <ul style="list-style: none; padding: 0;">
+              <li class="block-important-dates">Abstract submission deadline (<b>optional</b>): TBD</li>
+              <li class="block-important-dates">Paper submission deadline: TBD</li>
+              <li class="block-important-dates">Acceptance notification: TBD</li>
+              <li class="block-important-dates">Revised version: TBD<br> </li>
+              <li class="block-important-dates">Workshop: November 16-20, 2025<br> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Important Dates Section -->
+
+    <!-- Submission Section -->
+    <!-- Submission Section -->
+
+    <!-- Organization Section -->
+    <div id="organization" class="container-fluid no-padding introduction-section">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 mb-100 text-center">
+          <h1 class="title">Organization</h1>
+        </div>
+        <div class="row brd-bottom pb-50">
+          <div class="col-md-4 col-md-offset-2" style="padding: 3em;">
+            <div>
+              <h3 class="sub-title-0 mt-20 mb-20">
+                <span class="topics">PROGRAM CO-CHAIRS</span>
+              </h3>
+              <ul>
+                <li>Mersedeh Sadeghi, University of Cologne, Germany</li>
+                <li>Marjan Hosseini, University of Connecticut, USA</li>
+                <li>Livia Lestingi, Politecnico di Milano, Italy</li>
+                <li>Alireza Javadian Sabet, University of Pittsburgh, USA</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="sub-title-0 mt-20 mb-20">
+                <span class="topics">STEERING COMMITTEE</span>
+              </h3>
+              <ul>
+                <li>Matteo Camilli, Politecnico di Milano, Italy</li>
+                <li>Morgan Frank, University of Pittsburgh, USA</li>
+                <li>Raffaela Mirandola, Karlsruhe Institute for Technology, Germany</li>
+                <li>Matteo Rossi, Politecnico di Milano, Italy</li>
+                <li>Patrizia Scandurra, University of Bergamo, Italy</li>
+                <li>Andreas Vogelsang, University of Duisburg-Essen, Germany</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4" style="padding: 3em;">
+            <div>
+              <h3 class="sub-title-0 mt-20 mb-20">
+                <span class="topics">PROGRAM COMMITTEE</span>
+              </h3>
+              <ul>
+                <li>TBA</li>
+                <!-- TODO -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Organization Section -->
+
+    <!-- Footer Main -->
+    <footer class="footer-main container-fluid" style="padding: 0;">
+      <div class="container">
+        <div class="footer-menu">
+          <!-- Copyrights -->
+          <div class="copyrights ow-pull-left">
+            <p>&copy; 2025 Ex-ASE</p>
+          </div>
+          <!-- Navigation -->
+          <nav class="navbar ow-navigation ow-pull-right">
+            <div class="navbar-header">
+              <button aria-controls="navbar" aria-expanded="false" data-target="#navbar2" data-toggle="collapse"
+                class="navbar-toggle collapsed" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar2">
+              <ul class="nav navbar-nav">
+                <li><a title="Home" href="#">Home</a></li>
+                <li><a title="About" href="#about">About</a></li>
+                <li><a title="Important Dates" href="#importantDates">Important Dates</a></li>
+                <li><a title="Submissions" href="#submission">Submissions</a></li>
+                <li><a title="Organization" href="#organization">Organization</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Main /- -->
+
+    <!-- JQuery v1.11.3 -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Library - Js -->
+    <script src="libraries/lib.js"></script><!-- Bootstrap JS File v3.3.5 -->
+    <script src="libraries/jquery.countdown.min.js"></script>
+
+    <script src="libraries/lightslider-master/lightslider.js"></script>
+    <!-- Library - Google Map API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn3Z6i1AYolP3Y2SGis5qhbhRwmxxo1wU"></script>
+    <script src="js/functions.js"></script>
 </body>
+
 </html>
