@@ -47,18 +47,18 @@
   </div><!-- Loader /- -->
 
   <!-- Header -->
-  <header class="header-main container-fluid no-padding">
-    <!-- Top Header -->
-    <div class="top-header container-fluid no-padding">
+  <!-- <header class="header-main container-fluid no-padding">
+     Top Header 
+     <div class="top-header container-fluid no-padding">
       <div class="container">
-        <div class="row">
+        <div class="row"> --> 
           <!-- Social -->
-          <div class="col-md-4 col-sm-4 col-xs-6 social">
+          <!-- <div class="col-md-4 col-sm-4 col-xs-6 social">
             <ul>
               <li><a title="Twitter" href="TODO" target="_blank"><i class="fa fa-twitter"></i></a></li>
               <li><a title="Mail" href="mailto:TODO"><i class="fa fa-envelope"></i></a></li>
             </ul>
-          </div>
+          </div> -->
           <!-- Register Placeholder -->
           <!--
         <div class="col-md-4 col-sm-4 col-xs-6 register">
@@ -66,14 +66,14 @@
         </div>
         -->
           <!-- Logo -->
-          <div class="col-md-4 col-sm-4 col-xs-12 logo-block">
+          <!-- <div class="col-md-4 col-sm-4 col-xs-12 logo-block">
             <a href="https://exase.github.io" title="Logo">
               <h3>Ex-ASE 2025</h3>
             </a>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Menu Block -->
     <div class="menu-block container-fluid no-padding">
@@ -91,16 +91,22 @@
                 </button>
               </div>
               <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav menubar">
+                <!-- Left: Main Navigation -->
+                <ul class="nav navbar-nav navbar-left">
                   <li class="active"><a title="Home" href="index.html">Home</a></li>
                   <li><a title="About" href="#about">About</a></li>
                   <li><a title="Important Dates" href="#importantDates">Important Dates</a></li>
                   <li><a title="Submission" href="#submission">Submission</a></li>
-                  <!-- <li><a title="Keynotes" href="#keynote">Keynotes</a></li> -->
-                  <!-- <li><a title="Program" href="#program">Program</a></li> -->
                   <li><a title="Organization" href="#organization">Organization</a></li>
                 </ul>
+              
+                <!-- Right: Social Icons -->
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a title="Mail" href="#"><i class="fa fa-envelope"></i></a></li>
+                </ul>
               </div>
+              
             </nav>
           </div>
         </div>
@@ -111,14 +117,14 @@
   <!-- Header /- -->
 
   <!-- TITLE Section -->
-  <div class="container-fluid no-padding howwecan-section"
+  <!-- <div class="container-fluid no-padding howwecan-section"
     style="background-image: url(images/seoul.jpg); background-size: cover; background-position: center;">
     <div class="section-padding"></div>
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="col-md-4 col-sm-6 col-xs-12"> -->
           <!-- Left side intentionally left empty -->
-        </div>
+        <!-- </div>
         <div class="col-md-8 col-sm-6 col-xs-12 transp align-left">
           <div class="howwecan-right">
             <div class="section-header">
@@ -155,7 +161,38 @@
       </div>
     </div>
     <div class="section-padding"></div>
+  </div> -->
+
+  <!-- TITLE Section /- -->
+
+  <div class="hero-banner" style="background-image: url('images/seoul2.jpg');">
+    <div class="hero-overlay">
+      <div class="section-header">
+        <p class="pre">1st International Workshop on Explainable Automated Software Engineering</p>
+        <p class="title">ExASE 2025</p>
+        <p class="subtitle">Exploring Theory, Adaptation, Needs, Challenges, and Ethics</p>
+        <p class="satellite">Co-located with the</p>
+        <p class="satellite">
+          <a href="https://conf.researchr.org/home/ase-2025" target="_blank">
+            40th IEEE/ACM International Conference on Automated Software Engineering (ASE 2025)
+          </a>
+        </p>
+      </div>
+      <div class="section-subheader">
+        <div class="iconsInfo">
+          <i class="fa fa-calendar"></i>
+          <p class="infos"><span>16-20 November</span></p>
+        </div>
+        <div class="iconsInfo">
+          <i class="fa fa-map-marker"></i>
+          <p class="infos"><span>Seoul, South Korea</span></p>
+        </div>
+      </div>
+    </div>
   </div>
+  
+  
+
   <!-- TITLE Section /- -->
 
   <!-- About Section -->
@@ -208,7 +245,31 @@
     <!-- Important Dates Section -->
 
     <!-- Submission Section -->
+    
+    <div id="submission" class="container-fluid no-padding introduction-section">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 mb-100 text-center">
+          <h1 class="title">Submission</h1>
+        </div>
+        <div class="col-sm-8 col-sm-offset-2 mb-100 text-left" style="padding: 2em;">
+          <p>All papers must be original and not simultaneously submitted to another journal or conference. All submissions will be reviewed by at least two members of the Program Committee. Evaluation criteria include technical quality, relevance, clarity, and potential to spark discussion. EasyChair will be used to manage submissions and reviews. Submissions must follow the IEEE conference format.</p>
+          <p><strong>Submission Guidelines:</strong></p>
+          <ul>
+            <li>Full papers (up to 10 pages, excluding references): Presenting mature research, empirical results, or in-depth case studies.</li>
+            <li>Short Papers (up to 6 pages, excluding references): Early-stage work, novel ideas, or position papers intended to stimulate discussion.</li>
+            <li>Demonstration Papers (up to 6 pages, excluding references): Describing tools, frameworks, or systems. Submissions should include a brief demo description; accepted demos will be given live presentation slots.</li>
+          </ul>
+          <div class="text-center" style="margin-top: 2em;">
+            <a href="https://easychair.org/my/conference?conf=exase2025" target="_blank" class="btn btn-primary btn-lg">
+              Submit Paper
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Submission Section -->
+
+   
 
     <!-- Organization Section -->
     <div id="organization" class="container-fluid no-padding introduction-section">
