@@ -340,4 +340,115 @@ a, a:hover {
 	}
   }
   
+  /* Organization */
+
+	/* #organization h2,
+	#organization h3 {
+		text-align: center;
+	}
+
+  .organization .org-group {
+	margin-bottom: 50px;
+  }
+  
+  .organization .org-members {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+  }
+  
+  .organization .org-card {
+	text-align: center;
+	width: 150px;
+	font-size: 14px;
+	align-items: center;
+  	text-align: center;
+  }
+  
+  .organization .org-card img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 8px;
+	border: 2px solid #ccc;
+  }
+  
+  .organization .org-card a {
+	display: block;
+	color: #000;
+	text-decoration: none;
+	font-weight: 500;
+  }
+   */
+
+/* === ORGANIZATION SECTION === */
+
+/* Center section titles */
+#organization h2,
+#organization h3 {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: #003844; /* matching title color */
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+/* Space out groupings */
+.org-group {
+  margin-bottom: 60px;
+}
+
+/* Flex layout for members */
+.org-members {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 40px;
+  }
+
+/* Individual card styles */
+.org-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 180px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(14, 0, 17, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.org-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Circular profile images */
+.org-card img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  border: 1px solid #af1b71;
+}
+
+/* Name & affiliation links */
+.org-card a {
+  font-family: 'Lato', sans-serif;
+  color: #1e1e1e;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.org-card a:hover {
+  color: #af1b71;
+}
+
   
