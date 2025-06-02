@@ -451,4 +451,29 @@ a, a:hover {
   color: #af1b71;
 }
 
+.pc-list {
+	list-style-position: inside;
+	text-align: center;
+	margin: 1em auto;
+	padding-left: 0;
+	max-width: 800px;
+  }
+  
+  .pc-list li {
+	margin-bottom: 0.5em;
+	font-size: 16px;
+	color: #1e1e1e;
+  }
+  
+  .pc-list a {
+	color: #1e1e1e;
+	text-decoration: none;
+	font-weight: 500;
+  }
+  
+  .pc-list a:hover {
+	color: #af1b71; /* Site's hover purple */
+	text-decoration: underline;
+  }
+
   
