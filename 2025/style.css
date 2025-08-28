@@ -451,6 +451,18 @@ a, a:hover {
   color: #af1b71;
 }
 
+.org-group li a {
+  color: #1e1e1e !important;
+  font-weight: 500;
+  text-decoration: underline !important;
+}
+
+.org-group li a:hover {
+  color: #af1b71 !important;
+  text-decoration: underline;
+}
+
+
 .pc-list {
 	list-style-position: inside;
 	text-align: center;
