@@ -476,12 +476,5 @@ a, a:hover {
 	text-decoration: underline;
   }
 
-	a {
-	  color: blue; /* for hyperlinks */
-	  text-decoration: none; /* removes underline */
-	}
-	
-	a:hover {
-	  color: #af1b71; /* color on hover */
-	}
+
 
