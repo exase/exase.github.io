@@ -488,5 +488,119 @@ a, a:hover {
 	text-decoration: underline;
   }
 
+/* === Proceedings buttons === */
+.proceedings-buttons {
+	margin-top: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+  }
+  
+  .proceedings-btn {
+	background-color: #003844;
+	color: #ffffff !important;
+	padding: 10px 22px;
+	border-radius: 8px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none !important;
+	transition: background 0.3s ease;
+  }
+  
+  .proceedings-btn:hover {
+	background-color: #af1b71;
+	color: #ffffff !important;
+	text-decoration: none;
+  }
+  
+  /* === Accepted papers layout === */
+  .papers-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	gap: 18px;
+	margin-top: 10px;
+  }
+  
+  .paper-card {
+	background: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(14, 0, 17, 0.08);
+	padding: 16px 18px;
+  }
+  
+  .paper-title {
+	font-size: 18px;
+	color: #003844;
+	margin: 0 0 6px;
+  }
+  
+  .paper-authors {
+	font-size: 14px;
+	color: #4a4a4a;
+	margin: 0 0 10px;
+  }
 
+  #papers-list {
+	max-width: 900px;       /* controls line width (adjust as needed) */
+	margin: 0 auto;         /* centers block horizontally */
+	padding-left: 40px;     /* <-- increase this number for bigger left gap */
+  }
+  
+  
+  .paper-abstract summary {
+	font-weight: 600;
+	cursor: pointer;
+	color: #1e1e1e;
+	text-decoration: underline;
+  }
+  
+  .paper-abstract p {
+	margin-top: 8px;
+	color: #333333;
+	line-height: 1.55;
+  }
+
+  /* Markdown-style paper display */
+#papers-list .paper {
+	margin-bottom: 28px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #ddd;
+  }
+  
+  #papers-list .paper-title {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 4px;
+	color: #003844;
+  }
+  
+  #papers-list .paper-authors {
+	font-style: italic;
+	margin-bottom: 6px;
+	color: #4a4a4a;
+  }
+  
+  #papers-list details summary {
+	cursor: pointer;
+	font-weight: 500;
+	text-decoration: underline;
+  }
+  
+  #accepted-papers {
+	display: none;
+  }
+  
+  #accepted-papers h2.title {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	width: 100%;
+	display: block;
+  }
+  
+  
+  /* Smooth page scrolling for in-page anchors */
+  html { scroll-behavior: smooth; }
 
