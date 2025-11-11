@@ -271,6 +271,33 @@
     </div>
     <!-- Submission Section -->
 
+   <!-- New Accepted Paper Section -->
+<div id="accepted-papers-section" class="container-fluid no-padding introduction-section">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 mb-80 text-center">
+      <h1 class="title">Accepted Papers</h1>
+    </div>
+
+    <div class="col-sm-8 col-sm-offset-2 mb-100 text-left" style="padding: 2em; border-bottom: 0;">
+      <p>
+		The following papers have been accepted to the Ex-ASE 2025 workshop:
+	  </p>
+      <div id="papers-list">
+        <ul style="list-style: disc; padding-left: 20px;">
+            <li>Paper Title 1 (Authors)</li>
+            <li>Paper Title 2 (Authors)</li>
+            <li>Paper Title 3 (Authors)</li>
+            <li>[... list will be updated upon acceptance ...]</li>
+        </ul>
+      </div>
+	  <p style="margin-top: 2em;">
+		**Note:** The proceedings for all accepted papers will be included in the ASE 2025 conference proceedings, available online and indexed in the ACM/IEEE Digital Library. You can view the full workshop schedule via the ASE 2025 main website.
+	  </p>
+    </div>
+  </div>
+</div>
+	  
+<!-- New Accepted Paper Section -->
 	  
     <!-- Proceedings Section -->
     <!-- <div id="Proceedings" class="container-fluid no-padding introduction-section">
@@ -526,6 +553,68 @@
     <!-- Library - Google Map API -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn3Z6i1AYolP3Y2SGis5qhbhRwmxxo1wU"></script>
     <script src="js/functions.js"></script>
+
+	<!Mer>
+
+	  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+      
+        const PAPERS = [
+          {
+            "title": "K-SNAC: Robust Neuron Coverage for OOD Generalization and Test Adequacy",
+            "abstract": "The rigorous testing of Deep Neural Networks (DNNs) is essential for their deployment in safety-critical applications. Neuron coverage criteria have been widely adopted for test adequacy, yet popular metrics such as Strong Neuron Activation Coverage (SNAC) suffer from a critical flaw: their reliance on a single maximum activation value makes them unstable, sensitive to outliers, and weakly correlated with robustness. To address this limitation, we propose K-SNAC, a distribution-aware coverage metric that replaces the unstable maximum threshold with a statistically grounded one derived from the mean and standard deviation of neuron pre-activations. We theoretically analyze the instability of SNAC and empirically demonstrate that K-SNAC achieves significantly stronger correlations with established robustness measures, while also maintaining low dependence on test set size. Furthermore, we validate the effectiveness of K-SNAC as an indicator of Out-of-Distribution (OOD) generalization, showing that it better aligns with existing OOD metrics than prior coverage criteria. Together, these results establish K-SNAC as a reliable and robust adequacy measure that bridges test coverage, robustness evaluation, and OOD generalization.",
+            "authors": "Uheon Kang, Wonseok Hwang, Seungwon Woo, Hyunseo Shin, Eunkyung Choi"
+          },
+          {
+            "title": "SeedUI: Understanding Initial Seeds in Fuzzing",
+            "abstract": "Greybox fuzzing, a widely used dynamic testing technique, iteratively tests the software using semi-randomly generated inputs that aim at reaching more code at runtime. It relies on a set of initial inputs (initial seeds) to bootstrap the fuzzing process. These initial seeds highly influence the fuzzing performance in terms of runtime coverage or finding bugs. This paper introduces SeedUI, a tool that helps in visualizing and understanding the performance of initial seeds across multiple fuzzing campaigns. It provides five different views that help a user for an in-depth initial seed analysis. In our previous work, we extracted a visualization task taxonomy for greybox fuzzing by interviewing 33 fuzzing experts and analyzing the responses. We evaluate SeedUI along with four existing tools: VisFuzz, FuzzSplore, FuzzInspector, and Ijon UI, in terms of their support to the taxonomy. Our findings indicate that SeedUI complements existing tools by addressing 9 tasks in the taxonomy that are not supported by them.",
+            "authors": "Sriteja Kummita, Eric Bodden, Miao Miao, Shiyi Wei"
+          },
+          {
+            "title": "From Facts to Foils: Designing and Evaluating Counterfactual Explanations for Smart Environments",
+            "abstract": "Explainability is increasingly seen as an essential feature of rule-based smart environments. While counterfactual explanations, which describe what could have been done differently to achieve a desired outcome, are a powerful tool in eXplainable AI (XAI), no established methods exist for generating them in these rule-based domains. In this paper, we present the first formalization and implementation of counterfactual explanations tailored to this domain. It is implemented as a plugin that extends an existing explanation engine for smart environments. We conducted a user study (N=17) to evaluate our generated counterfactuals against traditional causal explanations. The results show that user preference is highly contextual: causal explanations are favored for their linguistic simplicity and in time-pressured situations, while counterfactuals are preferred for their actionable content, particularly when a user wants to resolve a problem. Our work contributes a practical framework for a new type of explanation in smart environments and provides empirical evidence to guide the choice of when each explanation type is most effective.",
+            "authors": "Anna Trapp, Mersedeh Sadeghi, Andreas Vogelsang"
+          },
+          {
+            "title": "Explaining Software Vulnerabilities with Large Language Models",
+            "abstract": "The prevalence of security vulnerabilities has prompted companies to adopt static application security testing (SAST) tools for vulnerability detection. Nevertheless, these tools frequently exhibit usability limitations, as their generic warning messages do not sufficiently communicate important information to developers, resulting in misunderstandings or oversight of critical findings. In light of recent developments in Large Language Models (LLMs) and their text generation capabilities, our work investigates a hybrid approach that uses LLMs to tackle the SAST explainability challenges. In this paper, we present SAFE, an Integrated Development Environment (IDE) plugin that leverages GPT-4o to explain the causes, impacts, and mitigation strategies of vulnerabilities detected by SAST tools. Our expert user study findings indicate that the explanations generated by SAFE can significantly assist beginner to intermediate developers in understanding and addressing security vulnerabilities, thereby improving the overall usability of SAST tools.",
+            "authors": "Oshando Johnson, Alexandra Fomina, Ranjith Krishnamurthy, Vaibhav Chaudhari, Rohith Kumar Shanmuganathan, Eric Bodden"
+          },
+          {
+            "title": "Explaining Code Risk in OSS: Towards LLM-Generated Fault Prediction Interpretations",
+            "abstract": "Open Source Software (OSS) has become a very important and crucial infrastructure worldwide because of the value it provides. OSS typically depends on contributions from developers across diverse backgrounds and levels of experience. Making safe changes, such as fixing a bug or implementing a new feature, can be challenging, especially in object-oriented systems where components are interdependent. Static analysis and defect-prediction tools produce metrics (e.g., complexity, coupling) that flag potentially fault-prone components, but these signals are often hard for contributors new or unfamiliar with the codebase to interpret. Large Language Models (LLMs) have shown strong performance on software engineering tasks such as code summarization and documentation generation. Building on this progress, we investigate whether LLMs can translate fault-prediction metrics into clear, human-readable risk explanations and actionable guidance to help OSS contributors plan and review code modifications. We outline explanation types that an LLM-generated assistant could provide (descriptive, contextual, and actionable explanations). We also outline our next steps to assess usefulness through a task-based study with OSS contributors, comparing metric-only baselines to LLM-generated explanations on decision quality, time-to-completion, and error rates.",
+            "authors": "Elijah Adejumo, Brittany Johnson"
+          },
+          {
+            "title": "Explainability in Automated Cross-Domain Model-Driven Brake System Development",
+            "abstract": "Modern engineering systems often require collaboration across multiple domains, each using different models and tools. By implementing automated processes for keeping consistency, changes propagate across these models and tools, affecting the work of various stakeholders and teams. However, an explanation of these automatically propagated changes is often required. This paper presents a case study using heterogeneous models in the development and validation of a cross-domain automotive brake system. Our case study comprises a Brake Specification Model, a Computer-Aided Design Model, a Simulation Model as well as their corresponding metamodels, and a model of a real-world test bench for brake validation. We also present a set of change and explainability scenarios that occur during the development and validation process of a cyber-physical brake system. Using these scenarios, we highlight explainability requirements and challenges in cross-domain engineering and validation processes in a cyber-physical system context, which explainability solutions and approaches should address. To address a subset of these challenges, we present a human-in-the-loop approach which improves explainability in cyber-physical systems development. The models, metamodels, and the scenarios that use them which we provide here will aid researchers in validating their approaches and in investigating the development challenges arising from cross-domain consistent cyber-physical.",
+            "authors": "Nathan Hagel, Johannes Mäkelburg, Claus Hammann, Thomas Weber, Thomas Alexander Völk, Francesco P. Urbano, Patrick Grycz, Katharina Bause, Minakshi Kaushik, Vincenzo Scotti, Akhila Bairy, Maike Schwammberger, Maribel Acosta, Albert Albers, Anne Koziolek, Tobias Düser"
+          }
+        ];
+      
+        const list = document.getElementById('papers-list');
+      
+        // Function to render papers
+        const renderPapers = () => {
+          list.innerHTML = PAPERS.map(p => `
+            <div class="paper" style="margin-bottom:25px; border-bottom:1px solid #ddd; padding-bottom:15px;">
+              <div class="paper-title" style="font-size:20px;font-weight:600;color:#003844;">${p.title}</div>
+              <div class="paper-authors" style="font-style:italic;color:#4a4a4a;margin-bottom:6px;">${p.authors}</div>
+              <details>
+                <summary style="cursor:pointer;font-weight:500;text-decoration:underline;">Abstract</summary>
+                <p style="margin-top:6px;line-height:1.55;">${p.abstract}</p>
+              </details>
+            </div>
+          `).join('');
+        };
+      
+        // Render papers immediately on load
+        renderPapers();
+      
+      });
+      </script>
+
+	<!Mer>
 
 	<script>
       document.addEventListener('DOMContentLoaded', () => {
