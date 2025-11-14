@@ -599,6 +599,48 @@ a, a:hover {
 	width: 100%;
 	display: block;
   }
+  /* --- Keynote Speaker Section --- */
+.keynote-photo {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid #af1b71;
+	margin-bottom: 20px;
+  }
+  
+  .keynote-name a {
+	color: #1e1e1e !important;
+	text-decoration: underline !important;
+	font-weight: 600;
+	font-size: 20px;
+  }
+  
+  .keynote-name a:hover {
+	color: #af1b71 !important;
+  }
+  
+  .keynote-affiliation {
+	font-size: 16px;
+	color: #555;
+	margin-bottom: 12px;
+  }
+  
+  .keynote-title {
+	font-size: 22px;
+	font-weight: 700;
+	color: #003844;
+	margin-bottom: 15px;
+  }
+  
+  .keynote-abstract {
+	max-width: 800px;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 1.65;
+	color: #333;
+	text-align: justify;
+  }
   
   
   /* Smooth page scrolling for in-page anchors */
